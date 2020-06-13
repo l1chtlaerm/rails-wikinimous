@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 mx-0">
+      <div class="container border-bottom p-0 mx-0">
+        <h1><%= @article.title %></h1>
+        <%= link_to raw("<i class='fa fa-trash-o'></i>"),
+            "/articles/#{@article.id}",
+            method: :delete %>
+        <%= link_to raw("<i class='fa fa-pencil'></i>"), edit_article_path %>
+      </div>
+      <p class="my-3"><%= @article.content %></p>
+    </div>
+  </div>
+</div>

@@ -5,11 +5,19 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://kit.fontawesome.com/f3f3191f7e.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <a class="navbar-brand" href="/articles">Wikinimous</a>
+      <span class="navbar-link">
+        <a href="/articles/new">Add a new article</a>
+      </span>
+    </nav>
     <%= yield %>
   </body>
 </html>
+

@@ -1,0 +1,8 @@
+// app/assets/stylesheets/application.scss
+@import "bootstrap/scss/bootstrap";
+
+#editor {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+}
